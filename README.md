@@ -7,7 +7,7 @@ A KV store built on [ModelOS](https://github.com/aunum/modelos)
 pip install kvd
 ```
 
-kvd requires a working Kubernetes cluster, found by the current kubeconfig context
+kvd requires a working Kubernetes cluster, found by the current kubeconfig context. Currently, it has only been tested on [KinD](https://kind.sigs.k8s.io/)
 
 ## Usage
 
