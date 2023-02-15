@@ -1,0 +1,2 @@
+disable=logging-fstring-interpolation
+disable=too-few-public-methods
