@@ -11,7 +11,7 @@ kvd requires a working Kubernetes cluster, found by the current kubeconfig conte
 
 ## Usage
 
-Local
+Run locally
 ```python
 from kvd import KVStore
 
@@ -22,7 +22,7 @@ kvs = KVStore(EXAMPLE_DATA)
 val = kvs.get("bf32dd39-9bb2-4537-ba32-9a57c90ace8")
 ```
 
-Remote
+Generate a remote instance on Kubernetes
 ```python
 from kvd import KVStore
 
@@ -33,7 +33,7 @@ with KVSClient(EXAMPLE_DATA) as kvs:
 ```
 > | NOTE: Remote usage requires push access to the image registry defined in `tool.modelos.image_repo` in [pyproject.toml](./pyproject.toml)
 
-Client only
+Generate remote instance on Kubernetes using only the client
 ```python
 from kvd import KVStoreClient
 
